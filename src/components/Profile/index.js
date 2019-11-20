@@ -7,7 +7,7 @@ import Avatar from '../Avatar'
 
 const Profile = () => {
   const {
-    site: { 
+    site: {
       siteMetadata: {
         title,
         position,
