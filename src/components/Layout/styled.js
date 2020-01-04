@@ -7,6 +7,7 @@ export const LayoutWrapper = styled.section`
 export const LayoutMain = styled.main`
   background-color: #16202c;
   min-height: 100vh;
-  width: 100%;
+  width: calc(100% - 20rem);
+  margin-left: auto;
   padding: .5rem;
 `;
