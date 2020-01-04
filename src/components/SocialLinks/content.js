@@ -8,7 +8,7 @@ const links = [
     url: 'https://twitter.com/eroSiilva'
   },
   {
-    label: 'Linkedin',
+    label: 'LinkedinSquare',
     url: 'https://www.linkedin.com/in/erosilva/'
   },
 ]
