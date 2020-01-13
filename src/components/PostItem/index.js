@@ -1,22 +1,40 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const PostItem = () => (
-  <S.PostItemLink to="/slug/">
+const PostItem = ({
+  slug,
+  category,
+  date,
+  timeToRead,
+  title,
+  description
+}) => (
+  <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
-      <S.PostItemTag background="#47652b">Misc</S.PostItemTag>
+      <S.PostItemTag background="#47652b">{category}</S.PostItemTag>
       <S.PostItemInfo>
-        <S.PostItemDate>13 de Janeiro de 2020 - 4 min de leitura</S.PostItemDate>
+        <S.PostItemDate>{date} - {timeToRead} de leitura</S.PostItemDate>
         <S.PostItemTitle>
-          Estudos sobre GatsbyJS
+          {title}
         </S.PostItemTitle>
         <S.PostItemDescription>
-          Aprendendo a utilizar o GatsbyJS com Willian Justen
+          {description}
         </S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
   </S.PostItemLink>
 )
+
+PostItem.propTypes = {
+  slug: PropTypes.string.isRequired,
+  background: PropTypes.string,
+  category: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  timeToRead: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
 
 export default PostItem;
