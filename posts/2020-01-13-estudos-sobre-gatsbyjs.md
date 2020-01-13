@@ -1,10 +1,10 @@
-___
+---
 date: 2020-01-13 05:05:53
 title: Estudando desenvolvimento de sites estáticos com GatsbyJS
 description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus quaerat deleniti eligendi omnis officia nisi veniam iste animi hic obcaecati autem nam, temporibus voluptatum beatae voluptatem optio ratione dolorum?
 category: Misc
-background '#3e3e3e'
-___
+background: '#3e3e3e'
+---
 
 # Lorem ipsum
 

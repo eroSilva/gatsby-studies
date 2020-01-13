@@ -1,10 +1,10 @@
-___
+---
 date: 2020-01-10 06:12:12
 title: Aplicando Gatsby no dia a dia
 description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus quaerat deleniti eligendi omnis officia nisi veniam iste animi hic obcaecati autem nam, temporibus voluptatum beatae voluptatem optio ratione dolorum?
 category: Misc
-background '#e5e5e5'
-___
+background: '#e5e5e5'
+---
 
 # Lorem ipsum
 
