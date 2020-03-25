@@ -1,13 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Studies`,
-    position: 'Frontend Developer',
+    position: "Frontend Developer",
     description: `My Studies about GatsbyJs`,
     author: `@eroSilva`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/assets/img`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +32,22 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images-v2",
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              linkImagesToOriginal: false,
+            },
+          },
+          "gatsby-remark-lazy-load",
+        ],
       },
     },
     `gatsby-transformer-sharp`,
