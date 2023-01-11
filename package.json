@@ -16,7 +16,7 @@
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-remark-relative-images-v2": "^0.1.5",
     "gatsby-source-filesystem": "^2.1.36",
-    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.3",
     "lazysizes": "^5.2.0",
     "prop-types": "^15.7.2",
